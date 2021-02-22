@@ -1,0 +1,20 @@
+SHOW DATABASES;
+
+CREATE DATABASE universidade_u;
+
+
+/* universidade_u_logico: */
+
+CREATE TABLE ALUNO (
+    ativo_sn int,
+    sexo char(1),
+    idade int,
+    data_inscricao_curso date,
+    valor_pago_curso float(10,2),
+    nome varchar(25),
+    telefone varchar(20),
+    endereco text
+);
+
+
+DROP DATABASE universidade_u;
