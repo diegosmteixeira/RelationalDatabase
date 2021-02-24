@@ -1,0 +1,13 @@
+DELETE FROM
+    <tabela(s)>
+WHERE
+    <filtro(s)>
+
+OBS: sempre teste o campo antes com o filtro SELECT:
+SELECT * FROM aluno WHERE ativo_sn = 0;
+etc..
+
+
+DELETE FROM aluno WHERE ativo_sn = 0;
+DELETE FROM aluno WHERE idade IN (30, 29);
+DELETE FROM aluno WHERE idade IN (30, 29) OR sexo = 'F';

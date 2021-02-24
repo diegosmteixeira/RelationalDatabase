@@ -40,6 +40,7 @@ CREATE TABLE `aluno` (
 
 LOCK TABLES `aluno` WRITE;
 /*!40000 ALTER TABLE `aluno` DISABLE KEYS */;
+INSERT INTO `aluno` VALUES (1,'M',55,'2018-12-01',645.22,'João','11 5555-2222','Avenida Paulista, 1500, ap315 - São Paulo - SP'),(1,'F',30,'2018-11-01',456.22,'Fernanda','11 3333-2222','Rua Francisco Sá, 10 - Belo Horizonte- MG'),(0,'M',29,'2018-12-02',600.55,'José','11 4444-7777','Avenida Dom Manuel, 300, - Fortaleza - CE'),(1,'F',42,'2018-12-02',655.45,'Maria','11 7777-7777','Rua Miramar, 1300, ap112 - Natal - RN'),(1,'M',52,'2018-11-15',612.99,'Marcelo','11 1111-7777','Rua João de Abreu, 650, ap112 - Goiânia - Goiás');
 /*!40000 ALTER TABLE `aluno` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,4 +61,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-22 15:22:09
+-- Dump completed on 2021-02-24 13:50:20

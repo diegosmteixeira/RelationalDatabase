@@ -1,0 +1,13 @@
+SELECT
+    <coluna(s)>
+FROM
+    <tabela(s)>
+WHERE
+    <filtro(s)>
+ORDER BY
+    idade ASC, nome DESC
+
+
+SELECT * FROM aluno ORDER BY nome ASC;
+SELECT * FROM aluno ORDER BY valor_pago_curso DESC;
+SELECT * FROM aluno ORDER BY sexo ASC, idade DESC;

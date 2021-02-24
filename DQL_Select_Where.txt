@@ -1,0 +1,46 @@
+USE universidade_u;
+
+SELECT nome, telefone FROM aluno WHERE sexo = 'F';
+SELECT nome, telefone, sexo FROM aluno WHERE valor_pago_curso > 600;
+SELECT nome, telefone, data_inscricao_curso FROM aluno WHERE valor_pago_curso >= 600;
+SELECT nome, telefone, sexo, data_inscricao_curso FROM aluno WHERE valor_pago_curso <= 600;
+
+SELECT * FROM aluno WHERE sexo = 'M' AND ativo_sn = 1;
+SELECT * FROM aluno WHERE sexo = 'M' AND ativo_sn = 1 AND valor_pago_curso <= 625;
+
+SELECT * FROM aluno WHERE sexo = 'F' OR idade >= 40;
+SELECT * FROM aluno WHERE sexo = 'F' OR idade >= 40 AND valor_pago_curso < 600;
+-----------
+
+BETWEEN = Valores númericos e datas "SYNTHAX SUGAR"
+
+SELECT * FROM aluno WHERE idade BETWEEN 40 AND 60;
+SELECT * FROM aluno WHERE data_inscricao_curso BETWEEN 'yyyy-MM-dd' AND 'yyyy -MM-dd';
+SELECT * FROM aluno WHERE data_inscricao_curso BETWEEN '2018-11-01' AND '2018-11-30';
+-----------
+
+IN = Possibilidades "SYNTHAX SUGAR"
+
+SELECT * FROM aluno WHERE nome = 'Fernanda' OR nome = 'Maria' OR nome = 'Marcelo';
+SELECT * FROM aluno WHERE nome IN ('Fernanda', 'Maria', 'Marcelo');
+-----------
+
+NOT IN =
+
+SELECT * FROM aluno WHERE nome NOT IN ('Fernanda', 'Maria', 'Marcelo');
+-----------
+
+LIKE % qualquer conjunto de caracteres
+LIKE _ um ou mais caracteres em uma posição específica
+
+SELECT * FROM aluno WHERE nome LIKE 'Maria';
+SELECT * FROM aluno WHERE nome LIKE '%o'; Paulo, João, etc
+SELECT * FROM aluno WHERE nome LIKE '%r%'; Maria, Padre, Proa, etc
+SELECT * FROM aluno WHERE nome LIKE 'm%'; Maria, Marcio, Marcelo, etc
+SELECT * FROM aluno WHERE nome LIKE 'm%a'; Maria, Mariana, etc
+SELECT * FROM aluno WHERE nome LIKE '_osé'; José
+SELECT * FROM aluno WHERE nome LIKE '_oã_'; João
+SELECT * FROM aluno WHERE nome LIKE '___é'; José
+SELECT * FROM aluno WHERE nome LIKE '%d_'; Fernanda
+
+

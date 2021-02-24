@@ -1,0 +1,16 @@
+UPDATE
+    <coluna(s)>
+SET
+    <campo(s)>
+WHERE
+    <filtro(s)>
+
+
+USE universidade_u;
+
+SELECT * FROM aluno;
+
+UPDATE aluno SET ativo_sn = 0 WHERE nome = 'João';
+UPDATE aluno SET ativo_sn = 1, valor_pago_curso = 750 WHERE nome = 'José';
+UPDATE aluno SET telefone = '11 6666-5555' WHERE telefone = '11 7777-7777';
+
